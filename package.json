@@ -1,16 +1,25 @@
 {
   "name": "apiai-middleware",
   "version": "1.0.0",
-  "description": "",
+  "description": "PhaniBot application",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "express":"*",
-    "body-parser":"*",
+    "express": "*",
+    "body-parser": "*",
     "apiai": "*"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Phani",
+  "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phanimca/phaniBot-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/phanimca/phaniBot-nodejs/issues"
+  },
+  "homepage": "https://github.com/phanimca/phaniBot-nodejs#readme"
 }
