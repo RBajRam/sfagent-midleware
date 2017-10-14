@@ -1,9 +1,12 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
-//var port = process.env.port || 5000;
+var port = process.env.port || 5000;
 
 var app = express();
+
+app.set('port', (process.env.PORT || 5000));
+
 var apiai = require('apiai');
 var apiapp = apiai("4155768d2ec44c59bd45b146fa5f3fac");
 
@@ -31,7 +34,6 @@ app.post('/chat', function(req, res){
   request.end();
 });
 
-//app.listen(port, function(){
- // console.log('server started on Port 3000...')
-//}
-//);
+app.listen(app.get('port'), function(){
+  console.log('server started on Port ', app.get('port'));
+});
