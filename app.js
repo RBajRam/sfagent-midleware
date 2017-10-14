@@ -31,6 +31,7 @@ app.post('/chat', function(req, res){
   request.end();
 });
 
-app.listen(port, function(){
-  console.log('server started on Port 3000...')
-});
+//app.listen(port, function(){
+ // console.log('server started on Port 3000...')
+//}
+//);
