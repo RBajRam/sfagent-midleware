@@ -1,7 +1,7 @@
 {
   "name": "apiai-middleware",
   "version": "1.0.0",
-  "description": "PhaniBot application",
+  "description": "SimpleBoy application",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -12,15 +12,7 @@
     "body-parser": "*",
     "apiai": "*"
   },
-  "author": "Phani",
+  "author": "Ricardo",
   "license": "ISC",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/phanimca/phaniBot-nodejs.git"
-  },
-  "bugs": {
-    "url": "https://github.com/phanimca/phaniBot-nodejs/issues"
-  },
-  "homepage": "https://github.com/phanimca/phaniBot-nodejs#readme"
+  "devDependencies": {}
 }
