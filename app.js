@@ -3,7 +3,6 @@ var bodyParser = require('body-parser');
 var path = require('path');
 var port = process.env.port || 5000;
 var ssId= Math.floor(Math.random() * 1000) + 1;
-
 var app = express();
 
 app.set('port', (process.env.PORT || 5000));
@@ -22,7 +21,7 @@ app.get('/', function(req, res){
 app.post('/chat', function(req, res){
   console.log(req.body.chatText);
   var request = apiapp.textRequest(req.body.chatText, {
-    sessionId: ssId
+    sessionId: req.body.sessionId
   });
   request.on('response', function(response) {
       console.log(response);
