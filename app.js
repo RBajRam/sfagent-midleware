@@ -20,7 +20,7 @@ app.get('/', function(req, res){
 
 app.post('/chat', function(req, res){
   console.log(req.body.chatText);
-  //ssId= req.body.sessionId;
+  ssId= req.body.sessionId;
   var request = apiapp.textRequest(req.body.chatText, {
     sessionId: ssId
   });
