@@ -20,7 +20,7 @@ app.get('/', function(req, res){
 
 app.post('/chat', function(req, res){
   console.log(req.body.chatText);
-  //ssId= req.body.sessionId;
+  ssId= req.body.sessionId;
   var request = apiapp.textRequest(req.body.chatText, {
     sessionId: ssId
   });
@@ -38,3 +38,4 @@ app.post('/chat', function(req, res){
 app.listen(app.get('port'), function(){
   console.log('server started on Port ', app.get('port'));
 });
+
